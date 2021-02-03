@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragment.OrderInfoFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/makeorder_image2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_loc_yellow"
+                app:layout_constraintEnd_toStartOf="@+id/makeorder_select_from_cardview"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/makeorder_select_from_cardview" />
+
+            <ImageView
+                android:id="@+id/makeorder_image5"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_loc_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/makeorder_select_to_cardview" />
+
+            <ImageView
+                android:id="@+id/orderinfo_imag1"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/grey_lines"
+                app:layout_constraintBottom_toTopOf="@+id/makeorder_image5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/makeorder_image2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/makeorder_select_from_cardview"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="32dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orderinfo_status_txtview">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/makeorder_select_from_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:paddingStart="19dp"
+                        android:text="@string/go_place"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/makeorder_select_to_cardview"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/makeorder_select_from_cardview">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/makeorder_select_to_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:paddingStart="19dp"
+                        android:text="@string/go_place"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/orderinfo_num_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/order_num"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/orderinfo_status_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/completed"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orderinfo_num_txtview" />
+
+            <TextView
+                android:id="@+id/orderinfo_date_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="TextView"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orderinfo_status_txtview"
+                tools:text="@tools:sample/date/ddmmyy" />
+
+            <TextView
+                android:id="@+id/orderinfo_price_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orderinfo_status_txtview" />
+
+            <TextView
+                android:id="@+id/orderinfo_payed_type_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/orderinfo_price_txtview"
+                app:layout_constraintTop_toBottomOf="@+id/orderinfo_status_txtview" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/orderinfo_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/orderinfo_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/driver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderinfo_services_txtview" />
+
+    <TextView
+        android:id="@+id/orderinfo_services_txtview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderinfo_t2"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/orderinfo_driver_txtview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderinfo_t3"
+        tools:text="@tools:sample/full_names" />
+
+    <RatingBar
+        android:id="@+id/orderinfo_driver_ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderinfo_driver_txtview" />
+
+    <TextView
+        android:id="@+id/orderinfo_t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/car"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderinfo_driver_ratingBar" />
+
+    <TextView
+        android:id="@+id/orderinfo_car_name_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderinfo_t4"
+        tools:text="@tools:sample/lorem" />
+
+    <Button
+        android:id="@+id/orderinfo_bnt1"
+        style="@style/MyBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"
+        android:text="@string/repeat_this_trip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/orderinfo_btn2"
+        style="@style/MyBtn"
+        android:layout_width="0dp"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border_btn_background"
+        android:text="@string/leave_a_feedback"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/orderinfo_bnt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/orderinfo_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/orderinfo_show_driverphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Показать номер"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderinfo_driver_txtview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

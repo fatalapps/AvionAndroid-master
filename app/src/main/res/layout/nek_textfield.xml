@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/nek_textfield_icon_imageview"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="2dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/ic_person" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp">
+
+        <EditText
+            android:id="@+id/nek_textfield_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:fontFamily="@font/roboto_regular"
+            android:importantForAutofill="no"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,LabelFor,RtlSymmetry,UnusedAttribute" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

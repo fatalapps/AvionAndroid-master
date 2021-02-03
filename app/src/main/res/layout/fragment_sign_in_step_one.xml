@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragment.SignInStepOneFragment">
+
+    <TextView
+        android:id="@+id/signIn_txt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="25dp"
+        android:maxLines="5"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/accept_country_code_and_enter_phone_number"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:visibility="gone"
+
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/signin_txt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_txt">
+
+        <EditText
+            android:id="@+id/signin_code_editext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/enter_code"
+            android:importantForAutofill="no"
+            android:inputType="numberPassword"
+
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,LabelFor,RtlSymmetry,UnusedAttribute" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="0dp"
+
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/signin_txt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_txt">
+
+        <EditText
+            android:id="@+id/signin_hone_editext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_regular"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:paddingStart="20dp"
+            android:text="+7"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,LabelFor,RtlSymmetry,UnusedAttribute" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/signin_txt1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="57dp"
+        android:fontFamily="@font/roboto_medium"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/sign_in_txt"
+        android:textAlignment="center"
+        android:textColor="@color/desc_txt_color"
+        android:textSize="13sp"
+        android:clickable="true"
+        android:linksClickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/signin_next_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signin_next_btn"
+        style="@style/MyBtn"
+        android:layout_width="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/accept_and_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/signin_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_txt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

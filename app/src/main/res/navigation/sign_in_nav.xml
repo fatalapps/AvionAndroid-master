@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_nav"
+    app:startDestination="@id/signInStepOneFragment">
+    <fragment
+        android:id="@+id/chooseCountryFragment"
+        android:name="com.avion.app.fragment.ChooseCountryFragment"
+        android:label="fragment_choose_country"
+        tools:layout="@layout/fragment_choose_country" />
+    <fragment
+        android:id="@+id/signInStepOneFragment"
+        android:name="com.avion.app.fragment.SignInStepOneFragment"
+        android:label="fragment_sign_in_step_one"
+        tools:layout="@layout/fragment_sign_in_step_one">
+
+        <action
+            android:id="@+id/action_SignIn_to_chooseCountryFragment"
+            app:destination="@id/chooseCountryFragment" />
+    </fragment>
+</navigation>

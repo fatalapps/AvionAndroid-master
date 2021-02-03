@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "245758148428",
+    "firebase_url": "https://avion-d0512.firebaseio.com",
+    "project_id": "avion-d0512",
+    "storage_bucket": "avion-d0512.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245758148428:android:eaaa83dab6ec435f",
+        "android_client_info": {
+          "package_name": "com.avion.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245758148428-0ft2vck5qdr713hen0dj3u675olauup4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avion.app",
+            "certificate_hash": "749ffa5d03d2d59aa78e2cdbc7fe7a846b2c05d6"
+          }
+        },
+        {
+          "client_id": "245758148428-7d4anj23mu8sgthhemj0hh619fjqbvh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpYEasuXywVlJcdJqVLpXO09LUj3_ZUvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245758148428-7d4anj23mu8sgthhemj0hh619fjqbvh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

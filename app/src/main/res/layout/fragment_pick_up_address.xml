@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".fragment.PickUpAddressFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pichupaddress_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/pickupaddress_address_autoCompleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_the_address"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+            <ImageView
+                android:id="@+id/pickupaddress_clear_search_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_close_black_24dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/pickupaddress_list_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pickupaddress_airport_textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:drawableStart="@drawable/ic_flight"
+        android:drawableEnd="@drawable/ic_next_2"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/airports"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pickupaddress_train_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:drawableStart="@drawable/ic_train"
+        android:drawableEnd="@drawable/ic_next_2"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/train"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pickupaddress_faworit_txtview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:drawableStart="@drawable/ic_star"
+        android:drawableEnd="@drawable/ic_next_2"
+        android:drawablePadding="17dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/favorit"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+</LinearLayout>

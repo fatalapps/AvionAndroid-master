@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/nektxt_icon_imageview"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_time" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nektxt_nav_icon"
+            app:layout_constraintStart_toEndOf="@+id/nektxt_icon_imageview"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/nektxt_label_txtview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:visibility="visible" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nektxt_data_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/options_size"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:background="@drawable/yellow_circle"
+                tools:text="83"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textFontWeight="500"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/nektxt_data_txtview"
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/nektxt_nav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_next_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

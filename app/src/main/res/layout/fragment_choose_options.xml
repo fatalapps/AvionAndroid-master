@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ChooseOptionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ProgressBar
+            android:id="@+id/chooseoptions_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/childrenseat_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/child_seat"
+            app:useCheckbox="false">
+
+        </com.avion.app.unit.OptionView>
+        <com.avion.app.unit.OptionView
+            android:id="@+id/lulka_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/lulka"
+            app:useCheckbox="false">
+
+        </com.avion.app.unit.OptionView>
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/meetwtable_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/meeting_with_a_table"
+            app:useCheckbox="false" />
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/invoiceforcompany_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/invoice_for_company"
+            app:useCheckbox="true" />
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/carwithyellowplates_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/car_with_yellow_plates"
+            app:useCheckbox="true" />
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/englishspeakingdriver_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/english_speaking_driver"
+            app:useCheckbox="false">
+
+        </com.avion.app.unit.OptionView>
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/smokingsalon_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/smoking_salon"
+            app:useCheckbox="true" />
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/pettransport_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/pet_transportation"
+            app:useCheckbox="true" />
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/oversizedbagged_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/oversized_baggage"
+            app:useCheckbox="true" />
+
+        <com.avion.app.unit.OptionView
+            android:id="@+id/drivercomments_optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/driver_comment"
+            app:useCheckbox="false">
+
+        </com.avion.app.unit.OptionView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarTheme">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:title">Avion1</item>
+    </style>
+
+    <style name="MyBtn">
+        <item name="android:background">@drawable/full_btn_background</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+    </style>
+    <style name="MyRatingBar" parent="Theme.AppCompat">
+        <item name="android:progressDrawable">@drawable/ratingbar_selector</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:maxHeight">42dp</item>
+    </style>
+
+    <style name="AcquiringTheme.Custom" parent="AcquiringTheme">
+
+        <item name="acqButtonStyle">@style/AcquiringPayButtonStyle.Custom</item>
+        <item name="acqPayFormTitle">@string/acq_new_card</item>    </style>
+
+    <style name="AcquiringFieldStyle.Custom" parent="AcquiringFieldStyle">
+        <item name="android:textColor">@color/acq_colorTitle</item>
+        <item name="android:textColorHint">@color/acq_colorDescription</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="AcquiringPayEmailStyle.Custom" parent="AcquiringPayEmailStyle">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="AcquiringPayButtonStyle.Custom" parent="AcquiringButtonStyle">
+        <item name="android:background">@drawable/acq_button_bg</item>
+        <item name="android:text">@string/acq_pay1</item>
+    </style>
+
+
+
+    <style name="AcquiringTitleStyle.Custom" parent="AcquiringTitleStyle">
+        <item name="android:text">@string/acq_new_card</item>
+    </style>
+
+    <style name="AcquiringPayDescriptionStyle.AttachCard">
+        <item name="android:visibility">visible</item>
+        <item name="android:text">Some description</item>
+    </style>
+
+</resources>

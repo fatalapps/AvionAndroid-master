@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_height">46dp</dimen>
+    <dimen name="radius_corner">5dp</dimen>
+    <dimen name="extra_option_cardview_height">180dp</dimen>
+    <dimen name="cjoose_time_screen_1">100dp</dimen>
+</resources>

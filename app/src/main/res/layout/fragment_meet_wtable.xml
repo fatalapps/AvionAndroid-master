@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MeetWTableFragment" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choosetime_fightnumber_cardview"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetwtable_img">
+
+        <EditText
+            android:id="@+id/choosetime_fightnumber_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/enter_flight_number"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choosetime_departingfrom_cardview"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosetime_fightnumber_cardview">
+
+        <EditText
+            android:id="@+id/choosetime_departingfrom_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/you_are_departing_from"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/meetwtable_img"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/meet_w_table_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/meet_w_tableeditText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/text_on_the_plate"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:ems="10"
+        android:lines="2"
+        android:maxLength="40"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/meetwtable_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/meetwtable_img"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <Button
+        android:id="@+id/meetwtable_btn"
+        style="@style/MyBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/meetwtable_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/meetwtable_screen_txt"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/meetwtable_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosetime_departingfrom_cardview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

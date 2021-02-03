@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/makeOrderFragment">
+
+    <action
+        android:id="@+id/menu_orderlist"
+        app:destination="@id/orderListFragment" />
+    <action
+        android:id="@+id/menu_favoriteaddress"
+        app:destination="@id/favoriteAddressListFragment" />
+    <action
+        android:id="@+id/menu_topromocodes"
+        app:destination="@+id/promocodeFragment"/>
+    <action
+        android:id="@+id/menu_topayment"
+        app:destination="@+id/choosePaymentFragment"/>
+    <action
+        android:id="@+id/menu_userProfile"
+        app:destination="@+id/profileFragment"/>
+
+    <action
+        android:id="@+id/menu_Payment"
+        app:destination="@+id/choosePaymentFragment"/>
+
+    <action
+        android:id="@+id/menu_home"
+        app:destination="@+id/makeOrderFragment"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.avion.app.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/makeOrderFragment"
+        android:name="com.avion.app.fragment.MakeOrderFragment"
+        android:label="fragment_make_order"
+        tools:layout="@layout/fragment_make_order" >
+        <action
+            android:id="@+id/action_makeOrderFragment_to_chooseAddressMapFragment"
+            app:destination="@id/chooseAddressMapFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_chooseTimeFragment"
+            app:destination="@id/chooseTimeFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_chooseOptionsFragment"
+            app:destination="@id/chooseOptionsFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_chooseRegionFragment"
+            app:destination="@id/chooseRegionFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_pickUpAddressFragment"
+            app:destination="@id/pickUpAddressFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_choosePaymentFragment"
+            app:destination="@id/choosePaymentFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_orderInfoFragment"
+            app:destination="@id/orderInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseAddressMapFragment"
+        android:name="com.avion.app.fragment.ChooseAddressMapFragment"
+        android:label="fragment_choose_address_map"
+        tools:layout="@layout/fragment_choose_address_map" >
+        <argument
+            android:name="address_type"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTimeFragment"
+        android:name="com.avion.app.fragment.ChooseTimeFragment"
+        android:label="@string/time_of_car_label"
+        tools:layout="@layout/fragment_choose_time" >
+        <argument
+            android:name="address_type"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseOptionsFragment"
+        android:name="com.avion.app.fragment.ChooseOptionsFragment"
+        android:label="fragment_choose_options"
+        tools:layout="@layout/fragment_choose_options" >
+        <action
+            android:id="@+id/action_chooseOptionsFragment_to_cheldrenSeatsFragment"
+            app:destination="@id/cheldrenSeatsFragment" />
+        <action
+            android:id="@+id/action_chooseOptionsFragment_to_lulkaFragment"
+            app:destination="@id/lulkaFragment" />
+        <action
+            android:id="@+id/action_chooseOptionsFragment_to_meetWTableFragment"
+            app:destination="@id/meetWTableFragment" />
+        <action
+            android:id="@+id/action_chooseOptionsFragment_to_chooseLanguageFragment"
+            app:destination="@id/chooseLanguageFragment" />
+        <action
+            android:id="@+id/action_chooseOptionsFragment_to_driverCommentFragment"
+            app:destination="@id/driverCommentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cheldrenSeatsFragment"
+        android:name="com.avion.app.fragment.CheldrenSeatsFragment"
+        android:label="fragment_cheldren_seats"
+        tools:layout="@layout/fragment_cheldren_seats" />
+    <fragment
+        android:id="@+id/lulkaFragment"
+        android:name="com.avion.app.fragment.LulkaFragment"
+        android:label="fragment_lulka"
+        tools:layout="@layout/fragment_lulka" />
+    <fragment
+        android:id="@+id/meetWTableFragment"
+        android:name="com.avion.app.fragment.MeetWTableFragment"
+        android:label="fragment_meet_wtable"
+        tools:layout="@layout/fragment_meet_wtable" />
+    <fragment
+        android:id="@+id/chooseLanguageFragment"
+        android:name="com.avion.app.fragment.ChooseLanguageFragment"
+        android:label="fragment_choose_language"
+        tools:layout="@layout/fragment_choose_language" />
+    <fragment
+        android:id="@+id/driverCommentFragment"
+        android:name="com.avion.app.fragment.DriverCommentFragment"
+        android:label="fragment_driver_comment"
+        tools:layout="@layout/fragment_driver_comment" />
+    <fragment
+        android:id="@+id/chooseRegionFragment"
+        android:name="com.avion.app.fragment.ChooseRegionFragment"
+        android:label="fragment_choose_region"
+        tools:layout="@layout/fragment_choose_region" />
+    <fragment
+        android:id="@+id/pickUpAddressFragment"
+        android:name="com.avion.app.fragment.PickUpAddressFragment"
+        android:label="fragment_pick_up_address"
+        tools:layout="@layout/fragment_pick_up_address" >
+        <action
+            android:id="@+id/action_pickUpAddressFragment_to_choosePointAddressFragment"
+            app:destination="@id/choosePointAddressFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_pickUpAddressFragment_to_favoriteAddressListFragment"
+            app:destination="@id/favoriteAddressListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosePointAddressFragment"
+        android:name="com.avion.app.fragment.ChoosePointAddressFragment"
+        android:label="fragment_choose_point_address"
+        tools:layout="@layout/fragment_choose_point_address" />
+    <fragment
+        android:id="@+id/choosePaymentFragment"
+        android:name="com.avion.app.fragment.ChoosePaymentFragment"
+        android:label="fragment_choose_payment"
+        tools:layout="@layout/fragment_choose_payment" >
+        <action
+            android:id="@+id/action_choosePaymentFragment_to_addPaymentFragment"
+            app:destination="@id/addPaymentFragment" />
+        <action
+            android:id="@+id/action_choosePaymentFragment_to_orderListFragment"
+            app:destination="@id/orderListFragment" />
+        <action
+            android:id="@+id/action_choosePaymentFragment_to_orderInfoFragment"
+            app:destination="@id/orderInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPaymentFragment"
+        android:name="com.avion.app.fragment.AddPaymentFragment"
+        android:label="fragment_add_payment"
+        tools:layout="@layout/fragment_add_payment" />
+    <fragment
+        android:id="@+id/orderListFragment"
+        android:name="com.avion.app.fragment.OrderListFragment"
+        android:label="fragment_order_list"
+        tools:layout="@layout/fragment_order_list" >
+        <action
+            android:id="@+id/action_orderListFragment_to_orderInfoFragment"
+            app:destination="@id/orderInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderInfoFragment"
+        android:name="com.avion.app.fragment.OrderInfoFragment"
+        android:label="fragment_order_info"
+        tools:layout="@layout/fragment_order_info" >
+        <action
+            android:id="@+id/action_orderInfoFragment_to_makeOrderFragment"
+            app:destination="@id/makeOrderFragment" />
+        <action
+            android:id="@+id/action_orderInfoFragment_to_feedBackFragment"
+            app:destination="@id/feedBackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteAddressListFragment"
+        android:name="com.avion.app.fragment.FavoriteAddressListFragment"
+        android:label="fragment_favorite_address_list"
+        tools:layout="@layout/fragment_favorite_address_list" >
+        <action
+            android:id="@+id/action_favoriteAddressListFragment_to_createNewFavoriteAddressFragment"
+            app:destination="@id/createNewFavoriteAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewFavoriteAddressFragment"
+        android:name="com.avion.app.CreateNewFavoriteAddressFragment"
+        android:label="fragment_create_new_favorite_address"
+        tools:layout="@layout/fragment_create_new_favorite_address" />
+    <fragment
+        android:id="@+id/promocodeFragment"
+        android:name="com.avion.app.fragment.PromocodeFragment"
+        android:label="fragment_promocode"
+        tools:layout="@layout/fragment_promocode" />
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.avion.app.fragment.FeedBackFragment"
+        android:label="Оставить отзыв"
+        tools:layout="@layout/fragment_feed_back" />
+</navigation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:id="@+id/countrynametxt"
+        android:layout_weight=".8"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="15dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        tools:text="@tools:sample/cities">
+    </TextView>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:id="@+id/countrycodetxt"
+
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="15dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        tools:text="@tools:sample/cities">
+    </TextView>
+</LinearLayout>

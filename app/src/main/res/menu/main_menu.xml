@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_ur_trips"
+            android:enabled="true"
+            android:icon="@drawable/ic_ur_tips"
+            android:title="@string/your_trips"
+            app:showAsAction="withText" />
+        <!--<item
+            android:id="@+id/menu_payment_settings"
+            android:enabled="true"
+            android:icon="@drawable/ic_payment_settings"
+            android:title="@string/payment_settings"
+            app:showAsAction="withText|collapseActionView" />-->
+        <item
+            android:id="@+id/menu_favorites_address"
+            android:icon="@drawable/ic_favorites_address"
+            android:title="@string/favorite_addresses" />
+        <item
+            android:id="@+id/menu_payment"
+            android:icon="@drawable/ic_pay_menu"
+            android:title="@string/payment_settings" />
+        <item
+            android:id="@+id/menu_promocodes"
+            android:icon="@drawable/ic_promocodes"
+            android:title="@string/promocodes" />
+        <item
+            android:id="@+id/menu_helpDesc"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="@string/help_desk" />
+
+        <item
+            android:id="@+id/menu_exit"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/exit" />
+
+    </group>
+</menu>
